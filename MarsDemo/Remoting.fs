@@ -18,7 +18,7 @@ module Mars =
       PhotoUrl: string
     }
 
-  [<WebSharper.Core.Attributes.Remote>]
+  [<Rpc>]
   let get (sol:string) =
     
     match Int32.TryParse(sol) with
